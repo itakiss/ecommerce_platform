@@ -1,0 +1,67 @@
+/* Ensure the body and html take full height */
+.Contact {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;  /* Add flex to center content vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centering the contact-container inside .Contact */
+.contact-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  width: 100%; /* Make it responsive */
+  margin: auto;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+}
+
+.send-message-button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.send-message-button:hover {
+  background-color: #c9302c;
+}
+
+@media (min-width: 768px) {
+  .contact-form input {
+    width: 30%;
+  }
+
+  .contact-form textarea {
+    width: 100%;
+  }
+}

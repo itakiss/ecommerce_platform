@@ -1,0 +1,144 @@
+.profile-page {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .success-message {
+    margin-left: 10px;
+    color: green;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .profile-sidebar {
+    width: 30%;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .profile-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .profile-sidebar li {
+    margin-bottom: 15px;
+  }
+  
+  .profile-sidebar a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .profile-sidebar a.active {
+    color: #e63946;
+  }
+  
+  .profile-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .profile-content h2 {
+    color: #e63946;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    flex: 1;
+    margin-right: 10px;
+    color: #555;
+  }
+  
+  .form-group input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .cancel-button {
+    background-color: transparent;
+    color: #555;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .save-button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .my-orders {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .details-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .details-button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,75 @@
+.div {
+    background-color: var(--bg);
+    height: 1561px;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+.top-header {
+    background-color: var(--button);
+    height: 48px;
+    position: relative;
+    width: 100%;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.frame-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 50 px;
+    
+}
+
+.text-group {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+
+}
+
+.frame-3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    top: 50%; 
+}
+
+.text-wrapper, .text-wrapper-2 {
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.text-wrapper-3 {
+    color: var(--text);
+    font-family: var(--title-14px-regular-font-family);
+    font-size: var(--title-14px-regular-font-size);
+    font-style: var(--title-14px-regular-font-style);
+    font-weight: var(--title-14px-regular-font-weight);
+    white-space: nowrap;
+}
+
+.icon-instance-node {
+    height: 24px;
+    width: 24px;
+}

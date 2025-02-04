@@ -1,0 +1,159 @@
+.cart-page {
+  width: 100%;
+  max-width: 1440px;
+  margin: 20px auto;
+  padding-top: 20px;
+}
+
+.cart-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cart-header, .cart-items {
+  width: 100%;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+}
+
+
+.remove-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 20%;
+}
+
+
+.cart-item .image-container {
+  display: grid;
+  grid-template-columns: 30% 1fr; /* Slika zauzima 30%, a tekst preostalih 70% */
+  align-items: stretch; /* Poravnanje slika i teksta u visini */
+  gap: 10px; /* Razmak između slike i teksta */
+}
+
+.cart-item .image-wrapper {
+  width: 100%; /* Širina slike je 100% širine unutar svog grid stupca */
+  height: 100%; /* Visina slike je 100% visine roditeljskog grid elementa */
+}
+
+.cart-item img {
+  width: 100%; /* Slika ispunjava širinu svog stupca */
+  height: 100%; /* Slika ispunjava visinu svog stupca */
+  object-fit: cover; /* Slika se prilagođava bez promjene omjera */
+}
+
+.cart-item .image-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.cart-header div,
+.cart-item div {
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.quantity-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.remove-item img {
+  width: 32px;
+  height: 32px;
+}
+
+.cart-item .cart-item-price {
+  display: flex;
+  align-items: center;
+  flex-grow: 20%;
+  justify-content: center;
+}
+
+.cart-item .price {
+  display: flex;
+  align-items: center;
+  flex-grow: 20%;
+  justify-content: center;
+}
+
+.cart-item-price,
+.cart-item-subtotal {
+  display: flex;
+  align-items: center;
+  flex-grow: 20%;
+  justify-content: center;
+}
+
+.cart-total {
+  margin-top: 20px; 
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  width: 300px;
+  float: right;
+}
+
+.cart-total h3 {
+  margin-top: 0;
+}
+
+.cart-total p {
+  margin: 10px 0;
+}
+
+.cart-total .checkout-button {
+  background-color: #ff4b4b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.cart-total .checkout-button:hover {
+  background-color: #e43a3a;
+}
+
+.quantity-controls button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.quantity-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.quantity-controls img {
+  width: 16px;
+  height: 16px;
+}

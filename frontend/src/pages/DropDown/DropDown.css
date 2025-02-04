@@ -1,0 +1,14 @@
+.drop-down-screen {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .drop-down-screen .vector {
+    height: 8px;
+    left: 6px;
+    position: absolute;
+    top: 8px;
+    width: 13px;
+  }
+  

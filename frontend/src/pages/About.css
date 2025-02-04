@@ -1,0 +1,57 @@
+.about-us {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    color: var(--text-2);
+    font-family: var(--heading-20px-medium-font-family);
+    font-size: var(--heading-20px-medium-font-size);
+    font-style: var(--heading-20px-medium-font-style);
+    font-weight: var(--heading-20px-medium-font-weight);
+    letter-spacing: var(--heading-20px-medium-letter-spacing);
+    line-height: var(--heading-20px-medium-line-height);
+    margin-bottom: 16px;
+  }
+  
+  .about-us p {
+    margin-bottom: 24px;
+    color: var(--text-2);
+    font-family: var(--heading-20px-medium-font-family);
+    font-size: var(--heading-20px-medium-font-size);
+    font-style: var(--heading-20px-medium-font-style);
+    font-weight: var(--heading-20px-medium-font-weight);
+    letter-spacing: var(--heading-20px-medium-letter-spacing);
+    line-height: var(--heading-20px-medium-line-height);
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .mission, .history, .commitment, .team, .contact {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    margin-bottom: 40px;
+  }
+  
+  a {
+    color: #00416A;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact a {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  

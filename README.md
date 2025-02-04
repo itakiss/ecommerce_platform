@@ -94,3 +94,53 @@ npm start
 ```
 The frontend will be available at http://localhost:5173/ (or another port depending on your setup)  
 
+# 🛒 E-Commerce Database  
+
+This repository also contains the **PostgreSQL database schema** for the **E-Commerce Web Application**. The database is designed to support:  
+
+- ✅ **User authentication and account management**  
+- ✅ **Product catalog with categories, brands, and variants**  
+- ✅ **Shopping cart and order management system**  
+- ✅ **Wishlist (Favorites) functionality**  
+- ✅ **Order tracking and checkout process**  
+
+---
+
+## 📂 Database Schema Overview  
+
+The database is structured into multiple **normalized tables**, ensuring **data consistency, integrity, and efficient querying**.  
+
+### **Key Tables & Relationships**  
+- **`users`** – Stores user details, hashed passwords, and verification status.  
+- **`products`** – Contains product details, including name, description, and category.  
+- **`product_variants`** – Each product can have multiple variants (e.g., different sizes, colors, prices).  
+- **`categories`** – Product categories for easier filtering.  
+- **`brands`** – Stores brand names linked to products.  
+- **`cart_items`** – Tracks user shopping carts with product variants and quantities.  
+- **`orders`** – Stores completed purchases, linked to users and payment details.  
+- **`order_items`** – Links specific products to orders, supporting multiple items per order.  
+- **`favorites`** – Allows users to save products to their wishlist.  
+- **`verification_tokens`** – Manages email verification and password reset tokens.  
+
+---
+
+## 🚀 Features & Best Practices  
+
+- 🔹 **PostgreSQL** as the primary relational database for scalable and secure storage.  
+- 🔹 **Foreign keys** enforce referential integrity between users, orders, and products.  
+- 🔹 **Indexes on frequently queried fields** to optimize performance.  
+- 🔹 **Constraints (`NOT NULL`, `UNIQUE`, `CHECK`)** to prevent invalid data entries.  
+- 🔹 **Cascade delete & update rules** for proper relationship management.  
+- 🔹 **Transactional integrity** ensures data consistency in complex operations (e.g., checkout process).  
+
+---
+
+## ⚡ Areas for Improvement & Future Enhancements  
+
+- 🛠 **Improve indexing strategy** for better query performance on large datasets.  
+- 🛠 **Add soft deletes** (`is_deleted` flag) instead of hard deletes for better data recovery.  
+- 🛠 **Implement audit logging** to track user activity, order history, and modifications.  
+- 🛠 **Optimize cart expiration logic** (e.g., auto-clear abandoned carts after a period).  
+- 🛠 **Enhance user roles & permissions** for admin, customer support, and standard users.  
+- 🛠 **Considering database partitioning** if dealing with a large volume of orders/products.  
+
